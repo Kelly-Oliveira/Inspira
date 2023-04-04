@@ -27,6 +27,9 @@ header > h1 {
   padding: 10px;
   font-size: 2rem;
 }
+a {
+  cursor: pointer;
+}
 
 .ancor {
   text-decoration: none;
@@ -39,12 +42,41 @@ header > h1 {
   font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   color: #afbefa;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-decoration: underline #ffffff 1px;
 }
 
-.div-photo {
+.subtitle {
+  padding: 15px;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  color: #afbefa;
+  font-size: 1.7rem;
+  text-decoration: underline #ffffff 1px;
+}
+
+.backHome {
+  margin: 25px;
+  display: flex;
+  padding: 0 15%;
+  flex-direction: row;
+  text-align: right;
+  justify-content: end;
+  align-items: center;
+}
+
+.paragraphBack {
+  cursor: pointer;
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: #afbefa;
+  font-size: 1.3rem;
+}
+
+.div-photo {
+  display: flex;
+
+  justify-content: center;
 }
 
 .div-photo:hover :not(:hover) {
@@ -57,7 +89,7 @@ img:hover {
 
 .photo {
   width: 270px;
-  height: 300px;
+  height: 320px;
   margin: 20px;
   border: #afbefa solid 2px;
   border-radius: 15px;
@@ -67,7 +99,7 @@ img:hover {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  padding: 0 25%;
+  padding: 0 15%;
   font-size: 1.3rem;
   color: aliceblue;
   font-family: "Montserrat";
@@ -78,7 +110,7 @@ img:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 0 25%;
+  padding: 0 15%;
   font-size: 1.3rem;
   color: aliceblue;
   font-family: "Montserrat";
@@ -89,7 +121,18 @@ img:hover {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 0 25%;
+  padding: 0 15%;
+  font-size: 1.3rem;
+  color: aliceblue;
+  font-family: "Montserrat";
+}
+
+.divMyDescription {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 0 15%;
   font-size: 1.3rem;
   color: aliceblue;
   font-family: "Montserrat";
