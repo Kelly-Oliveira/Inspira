@@ -22,11 +22,12 @@ header > h1 {
   color: #ffffff;
 }
 
-.title-header {
+.titleHeader {
   color: #ffffff;
   padding: 10px;
   font-size: 2rem;
 }
+
 a {
   cursor: pointer;
 }
@@ -52,17 +53,15 @@ a {
   text-align: center;
   color: #afbefa;
   font-size: 1.7rem;
-  text-decoration: underline #ffffff 1px;
 }
 
 .backHome {
   margin: 25px;
-  display: flex;
-  padding: 0 15%;
   flex-direction: row;
   text-align: right;
   justify-content: end;
   align-items: center;
+  padding: 0 15%;
 }
 
 .paragraphBack {
@@ -70,16 +69,16 @@ a {
   font-family: "Montserrat";
   text-decoration: none;
   color: #afbefa;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
-.div-photo {
+.divPhoto {
   display: flex;
-
-  justify-content: center;
+  padding: 0 15%;
+  justify-content: space-evenly;
 }
 
-.div-photo:hover :not(:hover) {
+.divPhoto:hover :not(:hover) {
   opacity: 0.3;
 }
 
@@ -88,8 +87,8 @@ img:hover {
 }
 
 .photo {
-  width: 270px;
-  height: 320px;
+  width: 280px;
+  height: 310px;
   margin: 20px;
   border: #afbefa solid 2px;
   border-radius: 15px;
@@ -101,7 +100,7 @@ img:hover {
   text-align: justify;
   padding: 0 15%;
   font-size: 1.3rem;
-  color: aliceblue;
+  color: #add8e6;
   font-family: "Montserrat";
 }
 
@@ -112,7 +111,7 @@ img:hover {
   text-align: left;
   padding: 0 15%;
   font-size: 1.3rem;
-  color: aliceblue;
+  color: #add8e6;
   font-family: "Montserrat";
 }
 
@@ -122,8 +121,11 @@ img:hover {
   flex-direction: column;
   text-align: left;
   padding: 0 15%;
+}
+
+.msgInspiration {
   font-size: 1.3rem;
-  color: aliceblue;
+  color: #add8e6;
   font-family: "Montserrat";
 }
 
@@ -134,17 +136,17 @@ img:hover {
   text-align: justify;
   padding: 0 15%;
   font-size: 1.3rem;
-  color: aliceblue;
+  color: #add8e6;
   font-family: "Montserrat";
 }
 
-.div-contact {
+.divContact {
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
-.social-contact {
+.socialContact {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -154,16 +156,22 @@ img:hover {
 .icon {
   width: 24px;
   height: 24px;
+  color: #add8e6;
+}
+
+.iconBack {
+  width: 16px;
+  height: 16px;
   color: #afbefa;
 }
 
-.text-icon {
-  color: #afbefa;
+.textIcon {
+  color: #add8e6;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
-.div-footer {
+.divFooter {
   font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   display: flex;
@@ -177,12 +185,12 @@ img:hover {
   padding: 15px;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 430px) {
   html {
     width: 100%;
   }
 
-  .title-header {
+  .titleHeader {
     font-size: 1.5rem;
   }
 
@@ -199,6 +207,19 @@ img:hover {
     font-size: 1.5rem;
   }
 
+  .subtitle {
+    font-size: 1.3rem;
+  }
+  .paragraphBack {
+    font-size: 0.8rem;
+  }
+
+  .backHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .photo {
     width: 200px;
     height: 230px;
@@ -207,19 +228,50 @@ img:hover {
     border-radius: 15px;
   }
 
+  .iconBack,
+  .icon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .textIcon {
+    font-size: 14px;
+  }
+
+  .divPhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .description,
   .qualities,
-  .message {
+  .message,
+  .divMyDescription {
     padding: 0 8%;
     font-size: 1rem;
     text-align: justify;
   }
 
-  .div-contact {
+  #myInspiration {
+    padding: 0 4%;
+  }
+
+  .msgInspiration {
+    font-size: 1rem;
+  }
+
+  .divContact {
     flex-direction: column;
   }
 
-  .social-contact {
+  .socialContact {
     padding: 10px;
+  }
+
+  .paragraphFooter {
+    margin: 10px;
+    font-size: 14px;
   }
 }
